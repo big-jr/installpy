@@ -2,6 +2,12 @@
 
 A script to install a newer version of Python on the Raspberry Pi.
 
+## Why Use This Script?
+
+There are two reasons to use this script:
+- It saves you a lot of typing when you want to update the version of Python on your Raspberry Pi, because you have to build it.
+- It handles the problem with `zlib` that you'll probably encounter during the build process, and then spend hours looking for on the web.
+
 ## To Use The Script
 
 Before you do anything else, you'll need to install the `zlib` packages to handle the Zlib compression used in the Python source code:
@@ -19,12 +25,6 @@ For example:
 ```
 
 Make sure you pass all three parts of the version number, or the script will fail.
-
-## Why Use This Script?
-
-There are two reasons to use this script:
-- It saves you a lot of typing
-- It handles the problem with `zlib` that you'll probably encounter during the build process, and then spend hours looking for on the web.
 
 Run it, go and have dinner, go to bed, go to sleep, get up in the morning and it'll probably be done. Admittedly I was using a Raspberry Pi 3!
 
