@@ -1,4 +1,17 @@
-echo "The first parameter was: $1"
+#!/bin/bash
+
+if [[ "$#" -ne 1 ]]
+then
+  echo "Incorrect number of arguments - one full Python version is required"
+  exit 1
+fi
+
+if ! [[ "$1" =~ ^[[:digit:]]{1,2}\.[[:digit:]]{1,2}\.[[:digit:]]{1,3}$ ]]
+then
+  echo "Invalid format - the Python must be in the format x.yy.zz, not $1"
+  exit 2
+fi
+
 PYTHON_VERSION=$1
 echo "Trying to download Python version $PYTHON_VERSION from the download site"
 wget https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tgz
