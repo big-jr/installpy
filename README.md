@@ -16,7 +16,13 @@ Before you do anything else, you'll need to install the `zlib` packages to handl
 sudo apt install zlib1g zliblg-dev
 ```
 
-Copy the script to your home directory on your Raspberry Pi 3 or 4. Run the script passing the three-part version of the version of Python that you want to install.
+Copy the script to your home directory on your Raspberry Pi 3 or 4. Set the permissions on the script file so that you can execute it:
+
+```(bash)
+chmod u+x installpy.sh
+```
+
+Run the script passing the three-part version of the version of Python that you want to install.
 
 For example:
 
