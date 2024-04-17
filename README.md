@@ -1,6 +1,6 @@
 # installpy
 
-A script to install a newer version of Python on the Raspberry Pi.
+A script to build and install a newer version of Python on the Raspberry Pi and ARM64 Mac.
 
 ## Why Use This Script?
 
@@ -10,7 +10,7 @@ There are two reasons to use this script:
 
 ## To Use The Script
 
-Before you do anything else, you'll need to install the `zlib` packages to handle the Zlib compression used in the Python source code:
+Before you do anything else, if you're using a Raspberry Pi you'll need to install the `zlib` packages to handle the Zlib compression used in the Python source code:
 
 ```(bash)
 sudo apt install zlib1g zliblg-dev
@@ -34,7 +34,7 @@ Make sure you pass all three parts of the version number, or the script will fai
 
 Run it, go and have dinner, go to bed, go to sleep, get up in the morning and it'll probably be done. Admittedly I was using a Raspberry Pi 3!
 
-Once the script has finished, you'll have a new version of Python to use on your Raspberry Pi. You'll need to address the new version directly, unless you add a symbolic link. I'll add more about that later - in the meantime you can check your new version of Python has installed by running this from the terminal:
+Once the script has finished, you'll have a new version of Python to use on your machine. You'll need to address the new version directly, unless you add a symbolic link. I'll add more about that later - in the meantime you can check your new version of Python has installed by running this from the terminal:
 
 ```bash
 python3.10 --version
@@ -50,3 +50,6 @@ Python 3.10.11
 
 Yes, it is. But it does the job. I'll be making it prettier later.
 
+## Where Can I Discover Some Background On This Script?
+
+The original article this script was based on is on my blog: [Installing a New Version of Python On A Raspberry Pi](https://www.softwarepragmatism.com/installing-a-new-version-of-python-on-a-raspberry-pi)
